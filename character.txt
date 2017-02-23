@@ -31,7 +31,7 @@ Medicine -1
 Nature -1
 Perception 1
 Performance 2
-Persuasian 2
+Persuasion 2
 Religion -1
 SleightOfHand 2
 Stealth 2

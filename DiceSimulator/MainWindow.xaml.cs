@@ -21,5 +21,6 @@ namespace DiceSimulator
         {
             InitializeComponent();
         }
+
     }
 }
