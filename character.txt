@@ -1,8 +1,10 @@
 Name Kirin
 Class Warlock
+Level 4
 ArmorClass 15
 Initiative 3
 Speed 30
+MaxHP 24
 Strength 10
 Dexterity 15
 Constitution 13
