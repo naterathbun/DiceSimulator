@@ -17,12 +17,12 @@
             <Label x:Name="StrengthValue" Content="7" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="20" Margin="-0.333,-0.333,-0.667,-0.333"/>
         </Border>
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="217" Margin="413,10,0,0" VerticalAlignment="Top" Width="220">
-            <Label x:Name="SpeedValue_Copy" Content="2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="65" FontSize="20" Height="34" Margin="153.667,52.667,0,0"/>
+            <Label x:Name="ProficiencyValue" Content="2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="65" FontSize="20" Height="34" Margin="153.667,70.667,0,0"/>
         </Border>
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="345" Margin="413,254,0,0" VerticalAlignment="Top" Width="220"/>
         <Label x:Name="CharacterClass" Content="Class" HorizontalAlignment="Left" Height="28" Margin="15,46,0,0" VerticalAlignment="Top" Width="139" FontSize="16"/>
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="345" Margin="197,254,0,0" VerticalAlignment="Top" Width="200">
-            <Label x:Name="SkillsList" Content="Acrobatics&#xD;&#xA;Animal Handling&#xD;&#xA;Arcana&#xD;&#xA;Athletics&#xD;&#xA;Deception&#xD;&#xA;History&#xD;&#xA;Insight&#xD;&#xA;Intimidation&#xD;&#xA;Investigation&#xD;&#xA;Medicine &#xD;&#xA;Nature&#xD;&#xA;Perception&#xD;&#xA;Performance&#xD;&#xA;Persuasion&#xD;&#xA;Religion &#xD;&#xA;Sleight Of Hand&#xD;&#xA;Stealth&#xD;&#xA;Survival" FontSize="14" Margin="3.667,-0.333,72.333,-1.333" Width="122" Height="345"/>
+            <Label x:Name="SkillsList" Content="Acrobatics&#xD;&#xA;Animal Handling&#xD;&#xA;Arcana&#xD;&#xA;Athletics&#xD;&#xA;Deception&#xD;&#xA;History&#xD;&#xA;Insight&#xD;&#xA;Intimidation&#xD;&#xA;Investigation&#xD;&#xA;Medicine &#xD;&#xA;Nature&#xD;&#xA;Perception&#xD;&#xA;Performance&#xD;&#xA;Persuasion&#xD;&#xA;Religion &#xD;&#xA;Sleight Of Hand&#xD;&#xA;Stealth&#xD;&#xA;Survival" FontSize="14" Margin="-0.333,-0.333,76.333,-1.333" Width="122" Height="345"/>
         </Border>
         <Label x:Name="DexterityLabel" Content="Dexterity" Margin="18,168,541.667,424" Width="85" Height="30"/>
         <Label x:Name="ConstitutionLabel" Content="Constitution" Margin="18,259,541.667,333" Width="85" Height="30"/>
@@ -64,20 +64,20 @@
             <Label x:Name="label4" Content="0" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"/>
         </Border>
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="125" Margin="197,102,0,0" VerticalAlignment="Top" Width="200">
-            <Label x:Name="SavesList" Content="Strength&#xD;&#xA;Dexterity&#xD;&#xA;Constitution&#xD;&#xA;Intelligence&#xD;&#xA;Wisdom&#xD;&#xA;Charisma" FontSize="14" Margin="3.667,-1.333,94.333,0" Height="124" Width="100"/>
+            <Label x:Name="SavesList" Content="Strength&#xD;&#xA;Dexterity&#xD;&#xA;Constitution&#xD;&#xA;Intelligence&#xD;&#xA;Wisdom&#xD;&#xA;Charisma" FontSize="14" Margin="-0.333,-1.333,98.333,0" Height="124" Width="100"/>
         </Border>
         <Label x:Name="SavesLabel" Content="Saving Throws" Margin="197,77,297.667,515" Width="150" Height="30"/>
         <Label x:Name="SkillsLabel" Content="Skills" Margin="198,230,361.667,362" Width="85" Height="30"/>
-        <Label x:Name="SavesValues" Content="0&#xD;&#xA;0&#xD;&#xA;0&#xD;&#xA;0&#xD;&#xA;0&#xD;&#xA;0" HorizontalAlignment="Left" Margin="336,102,0,0" VerticalAlignment="Top" Width="34" Height="124" FontSize="14"/>
-        <Label x:Name="SkillsValues" Content="0&#xD;&#xA;0&#xD;&#xA;0&#xD;&#xA;0&#xD;&#xA;0&#xD;&#xA;0&#xD;&#xA;0&#xD;&#xA;0&#xD;&#xA;0&#xD;&#xA;0&#xD;&#xA;0&#xD;&#xA;0&#xD;&#xA;0&#xD;&#xA;0&#xD;&#xA;0&#xD;&#xA;0&#xD;&#xA;0&#xD;&#xA;0" HorizontalAlignment="Left" Margin="336,254,0,0" VerticalAlignment="Top" Height="345" Width="34" FontSize="14"/>
+        <Label x:Name="SavesValues" Content="0&#xD;&#xA;0&#xD;&#xA;0&#xD;&#xA;0&#xD;&#xA;0&#xD;&#xA;0" HorizontalAlignment="Left" Margin="322,102,0,0" VerticalAlignment="Top" Width="34" Height="124" FontSize="14"/>
+        <Label x:Name="SkillsValues" Content="0&#xD;&#xA;0&#xD;&#xA;0&#xD;&#xA;0&#xD;&#xA;0&#xD;&#xA;0&#xD;&#xA;0&#xD;&#xA;0&#xD;&#xA;0&#xD;&#xA;0&#xD;&#xA;0&#xD;&#xA;0&#xD;&#xA;0&#xD;&#xA;0&#xD;&#xA;0&#xD;&#xA;0&#xD;&#xA;0&#xD;&#xA;0" HorizontalAlignment="Left" Margin="322,254,0,0" VerticalAlignment="Top" Height="345" Width="34" FontSize="14"/>
         <Button x:Name="LoadCharacterButton" Content="Load" HorizontalAlignment="Left" Margin="332,10,0,0" VerticalAlignment="Top" Width="65" Height="65" HorizontalContentAlignment="Center" FontSize="18"/>
-        <Label x:Name="CharacterInfoLabel" Content="Armor Class&#xD;&#xA;Speed&#xD;&#xA;Proficiency&#xD;&#xA;" HorizontalAlignment="Left" Margin="439,10,0,0" VerticalAlignment="Top" Width="129" Height="100" FontSize="20"/>
-        <Label x:Name="ArmorClassValue" Content="12" HorizontalAlignment="Left" Margin="568,10,0,0" VerticalAlignment="Top" Width="65" Height="34" FontSize="20"/>
-        <Label x:Name="SpeedValue" Content="30" HorizontalAlignment="Left" Margin="568,37,0,0" VerticalAlignment="Top" Width="65" FontSize="20" Height="34"/>
-        <Label x:Name="HPLabel" Content="HP" HorizontalAlignment="Left" Margin="430,110,0,0" VerticalAlignment="Top" Width="70" Height="50" FontSize="30"/>
-        <Label x:Name="HPValue" Content="10" HorizontalAlignment="Left" Margin="533,110,0,0" VerticalAlignment="Top" Width="51" FontSize="30" Height="52"/>
-        <Button x:Name="DecreaseHPButton" Content="-" HorizontalAlignment="Left" Margin="504,126,0,0" VerticalAlignment="Top" Width="20" Height="20"/>
-        <Button x:Name="IncreaseHPButton" Content="+" HorizontalAlignment="Left" Margin="587,126,0,0" VerticalAlignment="Top" Width="20" Height="20"/>
+        <Label x:Name="CharacterInfoLabel" Content="Armor Class&#xA;Speed&#xA;Proficiency&#xD;&#xA;Initiative&#xA;" HorizontalAlignment="Left" Margin="439,28,0,0" VerticalAlignment="Top" Width="129" Height="136" FontSize="20"/>
+        <Label x:Name="ArmorClassValue" Content="12" HorizontalAlignment="Left" Margin="568,28,0,0" VerticalAlignment="Top" Width="65" Height="34" FontSize="20"/>
+        <Label x:Name="SpeedValue" Content="30" HorizontalAlignment="Left" Margin="568,55,0,0" VerticalAlignment="Top" Width="65" FontSize="20" Height="34"/>
+        <Label x:Name="HPLabel" Content="HP" HorizontalAlignment="Left" Margin="430,156,0,0" VerticalAlignment="Top" Width="70" Height="50" FontSize="30"/>
+        <Label x:Name="HPValue" Content="10" HorizontalAlignment="Left" Margin="533,156,0,0" VerticalAlignment="Top" Width="51" FontSize="30" Height="52"/>
+        <Button x:Name="DecreaseHPButton" Content="-" HorizontalAlignment="Left" Margin="504,172,0,0" VerticalAlignment="Top" Width="20" Height="20"/>
+        <Button x:Name="IncreaseHPButton" Content="+" HorizontalAlignment="Left" Margin="587,172,0,0" VerticalAlignment="Top" Width="20" Height="20"/>
         <Label x:Name="SkillsLabel_Copy" Content="Roll" Margin="416,230,143.667,362" Width="85" Height="30"/>
         <Button x:Name="D20Button" Content="Roll D20" HorizontalAlignment="Left" Margin="448,273,0,0" VerticalAlignment="Top" Width="150" Height="30"/>
         <Button x:Name="D12Button" Content="Roll D12" HorizontalAlignment="Left" Margin="448,328,0,0" VerticalAlignment="Top" Width="150" Height="30"/>
@@ -85,6 +85,31 @@
         <Button x:Name="D8Button" Content="Roll D8" HorizontalAlignment="Left" Margin="448,439,0,0" VerticalAlignment="Top" Width="150" Height="30"/>
         <Button x:Name="D6Button" Content="Roll D6" HorizontalAlignment="Left" Margin="448,494,0,0" VerticalAlignment="Top" Width="150" Height="30"/>
         <Button x:Name="D4Button" Content="Roll D4" HorizontalAlignment="Left" Margin="448,549,0,0" VerticalAlignment="Top" Width="150" Height="30"/>
+        <Label x:Name="InitiativeValue" Content="2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="65" FontSize="20" Height="34" Margin="568,109,0,0"/>
+        <Button x:Name="RollStrength" Content="Roll" HorizontalAlignment="Left" Margin="347,107,0,0" VerticalAlignment="Top" Width="40" Height="20"/>
+        <Button x:Name="RollDexterityButton" Content="Roll" HorizontalAlignment="Left" Margin="347,126,0,0" VerticalAlignment="Top" Width="40" Height="20"/>
+        <Button x:Name="ConstitutionRollButton" Content="Roll" HorizontalAlignment="Left" Margin="347,145,0,0" VerticalAlignment="Top" Width="40" Height="20"/>
+        <Button x:Name="IntelligenceRollButton" Content="Roll" HorizontalAlignment="Left" Margin="347,164,0,0" VerticalAlignment="Top" Width="40" Height="20"/>
+        <Button x:Name="WisdomRollButton" Content="Roll" HorizontalAlignment="Left" Margin="347,182,0,0" VerticalAlignment="Top" Width="40" Height="20"/>
+        <Button x:Name="CharismaRollButton" Content="Roll" HorizontalAlignment="Left" Margin="347,201,0,0" VerticalAlignment="Top" Width="40" Height="20"/>
+        <Button x:Name="AcrobaticsRollButton" Content="Roll" HorizontalAlignment="Left" Margin="347,259,0,0" VerticalAlignment="Top" Width="40" Height="20"/>
+        <Button x:Name="AnimalHandlingRollButton" Content="Roll" HorizontalAlignment="Left" Margin="347,278,0,0" VerticalAlignment="Top" Width="40" Height="20"/>
+        <Button x:Name="ArcanaRollButton" Content="Roll" HorizontalAlignment="Left" Margin="347,297,0,0" VerticalAlignment="Top" Width="40" Height="20"/>
+        <Button x:Name="AthleticsRollButton" Content="Roll" HorizontalAlignment="Left" Margin="347,316,0,0" VerticalAlignment="Top" Width="40" Height="20"/>
+        <Button x:Name="DeceptionRollButton" Content="Roll" HorizontalAlignment="Left" Margin="347,334,0,0" VerticalAlignment="Top" Width="40" Height="20"/>
+        <Button x:Name="HistoryRollButton" Content="Roll" HorizontalAlignment="Left" Margin="347,353,0,0" VerticalAlignment="Top" Width="40" Height="20"/>
+        <Button x:Name="InsightRollButton" Content="Roll" HorizontalAlignment="Left" Margin="347,371,0,0" VerticalAlignment="Top" Width="40" Height="20"/>
+        <Button x:Name="IntimidationRollButton" Content="Roll" HorizontalAlignment="Left" Margin="347,390,0,0" VerticalAlignment="Top" Width="40" Height="20"/>
+        <Button x:Name="InvestigationRollButton" Content="Roll" HorizontalAlignment="Left" Margin="347,408,0,0" VerticalAlignment="Top" Width="40" Height="20"/>
+        <Button x:Name="MedicineRollButton" Content="Roll" HorizontalAlignment="Left" Margin="347,427,0,0" VerticalAlignment="Top" Width="40" Height="20"/>
+        <Button x:Name="NatureRollButton" Content="Roll" HorizontalAlignment="Left" Margin="347,446,0,0" VerticalAlignment="Top" Width="40" Height="20"/>
+        <Button x:Name="PerceptionRollButton" Content="Roll" HorizontalAlignment="Left" Margin="347,465,0,0" VerticalAlignment="Top" Width="40" Height="20"/>
+        <Button x:Name="PerformanceRollButton" Content="Roll" HorizontalAlignment="Left" Margin="347,483,0,0" VerticalAlignment="Top" Width="40" Height="20"/>
+        <Button x:Name="PersuasionRollButton" Content="Roll" HorizontalAlignment="Left" Margin="347,502,0,0" VerticalAlignment="Top" Width="40" Height="20"/>
+        <Button x:Name="ReligionRollButton" Content="Roll" HorizontalAlignment="Left" Margin="347,520,0,0" VerticalAlignment="Top" Width="40" Height="20"/>
+        <Button x:Name="SleightOfHandRollButton" Content="Roll" HorizontalAlignment="Left" Margin="347,539,0,0" VerticalAlignment="Top" Width="40" Height="20"/>
+        <Button x:Name="StealthRollButton" Content="Roll" HorizontalAlignment="Left" Margin="347,558,0,0" VerticalAlignment="Top" Width="40" Height="20"/>
+        <Button x:Name="SurvivalRollButton" Content="Roll" HorizontalAlignment="Left" Margin="347,576,0,0" VerticalAlignment="Top" Width="40" Height="20"/>
 
     </Grid>
 </Window>
