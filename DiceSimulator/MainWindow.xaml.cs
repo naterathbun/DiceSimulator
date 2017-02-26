@@ -120,8 +120,7 @@ namespace DiceSimulator
         {
             if (CharacterFileIsLoaded())
             {
-                int roll = GetDiceRoll(20);
-                MessageBox.Show("Rolled a Strength Check...\n\nRolled: " + roll.ToString() + "\n     +\nBonus: " + this.character["BonusStrength"] + "\n----------\nTotal: " + (roll + this.character["BonusStrength"]).ToString());
+                DisplayRollMessage("Rolled a Strength Check", GetDiceRoll(20), "BonusStrength");
             }
         }
 
@@ -129,8 +128,7 @@ namespace DiceSimulator
         {
             if (CharacterFileIsLoaded())
             {
-                int roll = GetDiceRoll(20);
-                MessageBox.Show("Rolled a Dexterity Check...\n\nRolled: " + roll.ToString() + "\n     +\nBonus: " + this.character["BonusDexterity"] + "\n----------\nTotal: " + (roll + this.character["BonusDexterity"]).ToString());
+                DisplayRollMessage("Rolled a Dexterity Check", GetDiceRoll(20), "BonusDexterity");
             }
         }
 
@@ -138,8 +136,7 @@ namespace DiceSimulator
         {
             if (CharacterFileIsLoaded())
             {
-                int roll = GetDiceRoll(20);
-                MessageBox.Show("Rolled a Constitution Check...\n\nRolled: " + roll.ToString() + "\n     +\nBonus: " + this.character["BonusConstitution"] + "\n----------\nTotal: " + (roll + this.character["BonusConstitution"]).ToString());
+                DisplayRollMessage("Rolled a Constitution Check", GetDiceRoll(20), "BonusConstitution");
             }
         }
 
@@ -147,8 +144,7 @@ namespace DiceSimulator
         {
             if (CharacterFileIsLoaded())
             {
-                int roll = GetDiceRoll(20);
-                MessageBox.Show("Rolled an Intelligence Check...\n\nRolled: " + roll.ToString() + "\n     +\nBonus: " + this.character["BonusIntelligence"] + "\n----------\nTotal: " + (roll + this.character["BonusIntelligence"]).ToString());
+                DisplayRollMessage("Rolled an Intelligence Check", GetDiceRoll(20), "BonusIntelligence");
             }
         }
 
@@ -156,8 +152,7 @@ namespace DiceSimulator
         {
             if (CharacterFileIsLoaded())
             {
-                int roll = GetDiceRoll(20);
-                MessageBox.Show("Rolled a Wisdom Check...\n\nRolled: " + roll.ToString() + "\n     +\nBonus: " + this.character["BonusWisdom"] + "\n----------\nTotal: " + (roll + this.character["BonusWisdom"]).ToString());
+                DisplayRollMessage("Rolled a Wisdom Check", GetDiceRoll(20), "BonusWisdom");
             }
         }
 
@@ -165,8 +160,7 @@ namespace DiceSimulator
         {
             if (CharacterFileIsLoaded())
             {
-                int roll = GetDiceRoll(20);
-                MessageBox.Show("Rolled a Charisma Check...\n\nRolled: " + roll.ToString() + "\n     +\nBonus: " + this.character["BonusCharisma"] + "\n----------\nTotal: " + (roll + this.character["BonusCharisma"]).ToString());
+                DisplayRollMessage("Rolled a Charisma Check", GetDiceRoll(20), "BonusCharisma");
             }
         }
 
@@ -176,8 +170,7 @@ namespace DiceSimulator
         {
             if (CharacterFileIsLoaded())
             {
-                int roll = GetDiceRoll(20);
-                MessageBox.Show("Rolled a Strength Saving Throw...\n\nRolled: " + roll.ToString() + "\n     +\nBonus: " + this.character["SaveStrength"] + "\n----------\nTotal: " + (roll + this.character["SaveStrength"]).ToString());
+                DisplayRollMessage("Rolled a Strength Saving Throw", GetDiceRoll(20), "SaveStrength");
             }
         }
 
@@ -185,8 +178,7 @@ namespace DiceSimulator
         {
             if (CharacterFileIsLoaded())
             {
-                int roll = GetDiceRoll(20);
-                MessageBox.Show("Rolled a Dexterity Saving Throw...\n\nRolled: " + roll.ToString() + "\n     +\nBonus: " + this.character["SaveDexterity"] + "\n----------\nTotal: " + (roll + this.character["SaveDexterity"]).ToString());
+                DisplayRollMessage("Rolled a Dexterity Saving Throw", GetDiceRoll(20), "SaveDexterity");
             }
         }
 
@@ -194,8 +186,7 @@ namespace DiceSimulator
         {
             if (CharacterFileIsLoaded())
             {
-                int roll = GetDiceRoll(20);
-                MessageBox.Show("Rolled a Constitution Saving Throw...\n\nRolled: " + roll.ToString() + "\n     +\nBonus: " + this.character["SaveConstitution"] + "\n----------\nTotal: " + (roll + this.character["SaveConstitution"]).ToString());
+                DisplayRollMessage("Rolled a Constitution Saving Throw", GetDiceRoll(20), "SaveConstitution");
             }
         }
 
@@ -203,8 +194,7 @@ namespace DiceSimulator
         {
             if (CharacterFileIsLoaded())
             {
-                int roll = GetDiceRoll(20);
-                MessageBox.Show("Rolled a Intelligence Saving Throw...\n\nRolled: " + roll.ToString() + "\n     +\nBonus: " + this.character["SaveIntelligence"] + "\n----------\nTotal: " + (roll + this.character["SaveIntelligence"]).ToString());
+                DisplayRollMessage("Rolled an Intelligence Saving Throw", GetDiceRoll(20), "SaveIntelligence");
             }
         }
 
@@ -212,8 +202,7 @@ namespace DiceSimulator
         {
             if (CharacterFileIsLoaded())
             {
-                int roll = GetDiceRoll(20);
-                MessageBox.Show("Rolled a Wisdom Saving Throw...\n\nRolled: " + roll.ToString() + "\n     +\nBonus: " + this.character["SaveWisdom"] + "\n----------\nTotal: " + (roll + this.character["SaveWisdom"]).ToString());
+                DisplayRollMessage("Rolled a Wisdom Saving Throw", GetDiceRoll(20), "SaveWisdom");
             }
         }
 
@@ -221,13 +210,12 @@ namespace DiceSimulator
         {
             if (CharacterFileIsLoaded())
             {
-                int roll = GetDiceRoll(20);
-                MessageBox.Show("Rolled a Charisma Saving Throw...\n\nRolled: " + roll.ToString() + "\n     +\nBonus: " + this.character["SaveCharisma"] + "\n----------\nTotal: " + (roll + this.character["SaveCharisma"]).ToString());
+                DisplayRollMessage("Rolled a Charisma Saving Throw", GetDiceRoll(20), "SaveCharisma");
             }
         }
 
 
-        // Roll Skill Checks
+        // Roll Skill Checks     DO THIS **************************************************************
         private void AcrobaticsRollButton_Click(object sender, RoutedEventArgs e)
         {
 
@@ -324,19 +312,17 @@ namespace DiceSimulator
         {
             if (CharacterFileIsLoaded())
             {
-                int roll = GetDiceRoll(20);
-                MessageBox.Show("Rolled for Initiative.\n\nRolled: " + roll.ToString() + "\n\nTotal: " + (roll + this.character["Initiative"]).ToString());
+                DisplayRollMessage("Rolled for Initiative", GetDiceRoll(20), "Initiative");
             }
         }
-
+        
 
         // Roll Generic Dice
         private void D20Button_Click(object sender, RoutedEventArgs e)
         {
             if (CharacterFileIsLoaded())
             {
-                int roll = GetDiceRoll(20);
-                MessageBox.Show("Rolled a d20...\n\nResult: " + roll.ToString());
+                DisplayPlainRollMessage("d20", GetDiceRoll(20));
             }
         }
 
@@ -344,8 +330,7 @@ namespace DiceSimulator
         {
             if (CharacterFileIsLoaded())
             {
-                int roll = GetDiceRoll(12);
-                MessageBox.Show("Rolled a d12...\n\nResult: " + roll.ToString());
+                DisplayPlainRollMessage("d12", GetDiceRoll(12));
             }
         }
 
@@ -353,8 +338,7 @@ namespace DiceSimulator
         {
             if (CharacterFileIsLoaded())
             {
-                int roll = GetDiceRoll(10);
-                MessageBox.Show("Rolled a d10...\n\nResult: " + roll.ToString());
+                DisplayPlainRollMessage("d10", GetDiceRoll(10));
             }
         }
 
@@ -362,8 +346,7 @@ namespace DiceSimulator
         {
             if (CharacterFileIsLoaded())
             {
-                int roll = GetDiceRoll(8);
-                MessageBox.Show("Rolled a d8...\n\nResult: " + roll.ToString());
+                DisplayPlainRollMessage("d8", GetDiceRoll(8));
             }
         }
 
@@ -371,8 +354,7 @@ namespace DiceSimulator
         {
             if (CharacterFileIsLoaded())
             {
-                int roll = GetDiceRoll(6);
-                MessageBox.Show("Rolled a d6...\n\nResult: " + roll.ToString());
+                DisplayPlainRollMessage("d6", GetDiceRoll(6));
             }
         }
 
@@ -380,19 +362,26 @@ namespace DiceSimulator
         {
             if (CharacterFileIsLoaded())
             {
-                int roll = GetDiceRoll(4);
-                MessageBox.Show("Rolled a d4...\n\nResult: " + roll.ToString());
+                DisplayPlainRollMessage("d4", GetDiceRoll(4));
             }
         }
 
         
-        // Dice Logic
         private int GetDiceRoll(int die)
         {
             return RandomNumber.Next(1, (die + 1));
         }
 
-        // Change Current HP
+        private void DisplayRollMessage(string rollDescription, int roll, string statToCheck)
+        {
+            MessageBox.Show(rollDescription + "...\n\nRolled: " + roll.ToString() + "\n     +\nBonus: " + this.character[statToCheck] + "\n----------\nTotal: " + (roll + this.character[statToCheck]));
+        }
+
+        private void DisplayPlainRollMessage(string diceType, int roll)
+        {
+            MessageBox.Show("Rolled a " + diceType + "...\n----------\nTotal: " + roll.ToString());
+        }
+
         private void DecreaseHPButton_Click(object sender, RoutedEventArgs e)
         {
             if (CharacterFileIsLoaded() && Convert.ToInt32(this.HPValue.Content) > 0)

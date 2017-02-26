@@ -111,12 +111,12 @@
         <Label x:Name="SkillsLabel" Content="Skills" Margin="198,231,361,355" Width="85" Height="35"/>
         <Label x:Name="SkillsLabel_Copy" Content="Roll" Margin="416,232,143,359" Width="85" Height="35"/>
         <Button x:Name="RollInitiativeButton" Content="Roll for Initiative" HorizontalAlignment="Left" Margin="448,141,0,0" VerticalAlignment="Top" Width="150" Height="30" Click="RollInitiativeButton_Click"/>
-        <Button x:Name="StrengthRollButton" Content="Roll" HorizontalAlignment="Left" Margin="158,113,0,0" VerticalAlignment="Top" Width="34" Height="26" Click="StrengthRollButton_Click"/>
-        <Button x:Name="DexterityRollButton" Content="Roll" HorizontalAlignment="Left" Margin="158,207,0,0" VerticalAlignment="Top" Width="34" Height="26"/>
-        <Button x:Name="ConstitutionRollButton" Content="Roll" HorizontalAlignment="Left" Margin="158,297,0,0" VerticalAlignment="Top" Width="34" Height="26"/>
-        <Button x:Name="IntelligenceRollButton" Content="Roll" HorizontalAlignment="Left" Margin="158,385,0,0" VerticalAlignment="Top" Width="34" Height="26"/>
-        <Button x:Name="WisdomRollButton" Content="Roll" HorizontalAlignment="Left" Margin="158,478,0,0" VerticalAlignment="Top" Width="34" Height="26"/>
-        <Button x:Name="CharismaRollButton" Content="Roll" HorizontalAlignment="Left" Margin="158,564,0,0" VerticalAlignment="Top" Width="34" Height="26"/>
+        <Button x:Name="StrengthRollButton" Content="Roll" HorizontalAlignment="Left" Margin="158,113,0,0" VerticalAlignment="Top" Width="34" Height="26" Click="StrengthRollButtonClick"/>
+        <Button x:Name="DexterityRollButton" Content="Roll" HorizontalAlignment="Left" Margin="158,207,0,0" VerticalAlignment="Top" Width="34" Height="26" Click="DexterityRollButtonClick"/>
+        <Button x:Name="ConstitutionRollButton" Content="Roll" HorizontalAlignment="Left" Margin="158,297,0,0" VerticalAlignment="Top" Width="34" Height="26" Click="ConstitutionRollButtonClick"/>
+        <Button x:Name="IntelligenceRollButton" Content="Roll" HorizontalAlignment="Left" Margin="158,385,0,0" VerticalAlignment="Top" Width="34" Height="26" Click="IntelligenceRollButtonClick"/>
+        <Button x:Name="WisdomRollButton" Content="Roll" HorizontalAlignment="Left" Margin="158,478,0,0" VerticalAlignment="Top" Width="34" Height="26" Click="WisdomRollButtonClick"/>
+        <Button x:Name="CharismaRollButton" Content="Roll" HorizontalAlignment="Left" Margin="158,564,0,0" VerticalAlignment="Top" Width="34" Height="26" Click="CharismaRollButtonClick"/>
 
     </Grid>
 </Window>
