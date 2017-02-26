@@ -77,6 +77,7 @@ namespace DiceSimulator
                 while (!sr.EndOfStream)
                 {
                     this.character.Add(sr.ReadLine(), Convert.ToInt32(sr.ReadLine()));
+                    // This currently crashes if you try to load a character after a character is already loaded. Need to add a reset to the dictionary
                 }
             }
         }
@@ -114,6 +115,20 @@ namespace DiceSimulator
             return (CharacterFilePath != null);
         }
 
+        private int GetDiceRoll(int die)
+        {
+            return RandomNumber.Next(1, (die + 1));
+        }
+
+        private void DisplayRollMessage(string rollDescription, int roll, string statToCheck)
+        {
+            MessageBox.Show(rollDescription + "...\n\nRolled: " + roll.ToString() + "\n     +\nBonus: " + this.character[statToCheck] + "\n----------\nTotal: " + (roll + this.character[statToCheck]));
+        }
+
+        private void DisplayPlainRollMessage(string diceType, int roll)
+        {
+            MessageBox.Show("Rolled a " + diceType + "...\n----------\nTotal: " + roll.ToString());
+        }
 
         // Roll Main Stat Checks
         private void StrengthRollButtonClick(object sender, RoutedEventArgs e)
@@ -215,95 +230,149 @@ namespace DiceSimulator
         }
 
 
-        // Roll Skill Checks     DO THIS **************************************************************
+        // Roll Skill Checks
         private void AcrobaticsRollButton_Click(object sender, RoutedEventArgs e)
         {
-
+            if (CharacterFileIsLoaded())
+            {
+                DisplayRollMessage("Rolled an Acrobatics Check", GetDiceRoll(20), "Acrobatics");
+            }
         }
 
         private void AnimalHandlingRollButton_Click(object sender, RoutedEventArgs e)
         {
-
+            if (CharacterFileIsLoaded())
+            {
+                DisplayRollMessage("Rolled an Animal Handling Check", GetDiceRoll(20), "AnimalHandling");
+            }
         }
 
         private void ArcanaRollButton_Click(object sender, RoutedEventArgs e)
         {
-
+            if (CharacterFileIsLoaded())
+            {
+                DisplayRollMessage("Rolled an Arcana Check", GetDiceRoll(20), "Arcana");
+            }
         }
 
         private void AthleticsRollButton_Click(object sender, RoutedEventArgs e)
         {
-
+            if (CharacterFileIsLoaded())
+            {
+                DisplayRollMessage("Rolled an Athletics Check", GetDiceRoll(20), "Athletics");
+            }
         }
 
         private void DeceptionRollButton_Click(object sender, RoutedEventArgs e)
         {
-
+            if (CharacterFileIsLoaded())
+            {
+                DisplayRollMessage("Rolled a Deception Check", GetDiceRoll(20), "Deception");
+            }
         }
 
         private void HistoryRollButton_Click(object sender, RoutedEventArgs e)
         {
-
+            if (CharacterFileIsLoaded())
+            {
+                DisplayRollMessage("Rolled a History Check", GetDiceRoll(20), "History");
+            }
         }
 
         private void InsightRollButton_Click(object sender, RoutedEventArgs e)
         {
-
+            if (CharacterFileIsLoaded())
+            {
+                DisplayRollMessage("Rolled an Insight Check", GetDiceRoll(20), "Insight");
+            }
         }
 
         private void IntimidationRollButton_Click(object sender, RoutedEventArgs e)
         {
-
+            if (CharacterFileIsLoaded())
+            {
+                DisplayRollMessage("Rolled an Intimidation Check", GetDiceRoll(20), "Intimidation");
+            }
         }
 
         private void InvestigationRollButton_Click(object sender, RoutedEventArgs e)
         {
-
+            if (CharacterFileIsLoaded())
+            {
+                DisplayRollMessage("Rolled an Investigation Check", GetDiceRoll(20), "Investigation");
+            }
         }
 
         private void MedicineRollButton_Click(object sender, RoutedEventArgs e)
         {
-
+            if (CharacterFileIsLoaded())
+            {
+                DisplayRollMessage("Rolled a Medicine Check", GetDiceRoll(20), "Medicine");
+            }
         }
 
         private void NatureRollButton_Click(object sender, RoutedEventArgs e)
         {
-
+            if (CharacterFileIsLoaded())
+            {
+                DisplayRollMessage("Rolled a Nature Check", GetDiceRoll(20), "Nature");
+            }
         }
 
         private void PerceptionRollButton_Click(object sender, RoutedEventArgs e)
         {
-
+            if (CharacterFileIsLoaded())
+            {
+                DisplayRollMessage("Rolled a Perception Check", GetDiceRoll(20), "Perception");
+            }
         }
 
         private void PerformanceRollButton_Click(object sender, RoutedEventArgs e)
         {
-
+            if (CharacterFileIsLoaded())
+            {
+                DisplayRollMessage("Rolled a Performance Check", GetDiceRoll(20), "Performance");
+            }
         }
 
         private void PersuasionRollButton_Click(object sender, RoutedEventArgs e)
         {
-
+            if (CharacterFileIsLoaded())
+            {
+                DisplayRollMessage("Rolled a Persuasion Check", GetDiceRoll(20), "Persuasion");
+            }
         }
 
         private void ReligionRollButton_Click(object sender, RoutedEventArgs e)
         {
-
+            if (CharacterFileIsLoaded())
+            {
+                DisplayRollMessage("Rolled a Religion Check", GetDiceRoll(20), "Religion");
+            }
         }
 
         private void SleightOfHandRollButton_Click(object sender, RoutedEventArgs e)
         {
-
+            if (CharacterFileIsLoaded())
+            {
+                DisplayRollMessage("Rolled a Sleight of Hand Check", GetDiceRoll(20), "SleightOfHand");
+            }
         }
 
         private void StealthRollButton_Click(object sender, RoutedEventArgs e)
         {
-
+            if (CharacterFileIsLoaded())
+            {
+                DisplayRollMessage("Rolled a Stealth Check", GetDiceRoll(20), "Stealth");
+            }
         }
 
         private void SurvivalRollButton_Click(object sender, RoutedEventArgs e)
         {
-
+            if (CharacterFileIsLoaded())
+            {
+                DisplayRollMessage("Rolled a Survival Check", GetDiceRoll(20), "Survival");
+            }
         }
 
 
@@ -366,22 +435,8 @@ namespace DiceSimulator
             }
         }
 
-        
-        private int GetDiceRoll(int die)
-        {
-            return RandomNumber.Next(1, (die + 1));
-        }
 
-        private void DisplayRollMessage(string rollDescription, int roll, string statToCheck)
-        {
-            MessageBox.Show(rollDescription + "...\n\nRolled: " + roll.ToString() + "\n     +\nBonus: " + this.character[statToCheck] + "\n----------\nTotal: " + (roll + this.character[statToCheck]));
-        }
-
-        private void DisplayPlainRollMessage(string diceType, int roll)
-        {
-            MessageBox.Show("Rolled a " + diceType + "...\n----------\nTotal: " + roll.ToString());
-        }
-
+        // HP Buttons
         private void DecreaseHPButton_Click(object sender, RoutedEventArgs e)
         {
             if (CharacterFileIsLoaded() && Convert.ToInt32(this.HPValue.Content) > 0)
@@ -397,5 +452,6 @@ namespace DiceSimulator
                 this.HPValue.Content = Convert.ToInt32(this.HPValue.Content) + 1;
             }
         }
+
     }
 }
