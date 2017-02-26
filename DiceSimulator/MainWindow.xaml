@@ -13,8 +13,8 @@
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="64" Margin="12,11,0,0" VerticalAlignment="Top" Width="302">
             <Label x:Name="CharacterNameLabel" Content="Character Name" HorizontalAlignment="Left" Height="65" Margin="0.667,-1.333,-0.667,-1.667" VerticalAlignment="Top" Width="300" FontSize="30"/>
         </Border>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="45" Margin="12,101,0,0" VerticalAlignment="Top" Width="112">
-            <Label x:Name="StrengthValue" Content="7" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="20" Margin="-0.333,-0.333,-0.667,-0.333"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="45" Margin="12,101,0,0" VerticalAlignment="Top" Width="89">
+            <Label x:Name="StrengthValue" Content="7" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="20" Margin="-0.333"/>
         </Border>
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="217" Margin="413,10,0,0" VerticalAlignment="Top" Width="220">
             <Label x:Name="ProficiencyValue" Content="2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="65" FontSize="20" Height="34" Margin="154,59,-1,0"/>
@@ -24,37 +24,37 @@
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="345" Margin="197,254,0,0" VerticalAlignment="Top" Width="200">
             <Label x:Name="SkillsList" Content="Acrobatics&#xD;&#xA;Animal Handling&#xD;&#xA;Arcana&#xD;&#xA;Athletics&#xD;&#xA;Deception&#xD;&#xA;History&#xD;&#xA;Insight&#xD;&#xA;Intimidation&#xD;&#xA;Investigation&#xD;&#xA;Medicine &#xD;&#xA;Nature&#xD;&#xA;Perception&#xD;&#xA;Performance&#xD;&#xA;Persuasion&#xD;&#xA;Religion &#xD;&#xA;Sleight Of Hand&#xD;&#xA;Stealth&#xD;&#xA;Survival" FontSize="14" Margin="-0.333,-0.333,76.333,-1.333" Width="122" Height="345"/>
         </Border>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="45" Margin="12,191,0,0" VerticalAlignment="Top" Width="112">
-            <Label x:Name="DexterityValue" Content="7" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="20" Margin="-0.333,-0.333,-0.667,-0.333"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="45" Margin="12,196,0,0" VerticalAlignment="Top" Width="89">
+            <Label x:Name="DexterityValue" Content="7" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="20" Margin="-0.333"/>
         </Border>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="45" Margin="12,282,0,0" VerticalAlignment="Top" Width="112">
-            <Label x:Name="ConstitutionValue" Content="7" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="20" Margin="-0.333,-0.333,-0.667,0"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="45" Margin="12,286,0,0" VerticalAlignment="Top" Width="89">
+            <Label x:Name="ConstitutionValue" Content="7" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="20" Margin="-0.333,-0.333,-0.333,0"/>
         </Border>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="45" Margin="12,374,0,0" VerticalAlignment="Top" Width="112">
-            <Label x:Name="IntelligenceValue" Content="7" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="20" Margin="-0.333,-0.333,-0.667,0"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="45" Margin="12,375,0,0" VerticalAlignment="Top" Width="89">
+            <Label x:Name="IntelligenceValue" Content="7" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="20" Margin="-0.333,-0.333,-0.333,0"/>
         </Border>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="45" Margin="12,467,0,0" VerticalAlignment="Top" Width="112">
-            <Label x:Name="WisdomValue" Content="7" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="20" Margin="-0.333,-0.333,-0.667,-0.333"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="45" Margin="12,467,0,0" VerticalAlignment="Top" Width="89">
+            <Label x:Name="WisdomValue" Content="7" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="20" Margin="-0.333"/>
         </Border>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="45" Margin="12,555,0,0" VerticalAlignment="Top" Width="112">
-            <Label x:Name="CharismaValue" Content="7" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="20" Margin="-0.333,-0.333,-0.667,-0.333"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="45" Margin="12,555,0,0" VerticalAlignment="Top" Width="89">
+            <Label x:Name="CharismaValue" Content="7" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="20" Margin="-0.333"/>
         </Border>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="45" Margin="136,101,0,0" VerticalAlignment="Top" Width="45">
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="45" Margin="108,101,0,0" VerticalAlignment="Top" Width="45">
             <Label x:Name="StrengthBonus" Content="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20"/>
         </Border>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="45" Margin="136,191,0,0" VerticalAlignment="Top" Width="45">
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="45" Margin="108,196,0,0" VerticalAlignment="Top" Width="45">
             <Label x:Name="DexterityBonus" Content="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20"/>
         </Border>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="45" Margin="136,282,0,0" VerticalAlignment="Top" Width="45">
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="45" Margin="108,286,0,0" VerticalAlignment="Top" Width="45">
             <Label x:Name="ConstitutionBonus" Content="0" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         </Border>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="45" Margin="136,374,0,0" VerticalAlignment="Top" Width="45">
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="45" Margin="108,375,0,0" VerticalAlignment="Top" Width="45">
             <Label x:Name="IntelligenceBonus" Content="0" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20"/>
         </Border>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="45" Margin="136,467,0,0" VerticalAlignment="Top" Width="45">
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="45" Margin="108,467,0,0" VerticalAlignment="Top" Width="45">
             <Label x:Name="WisdomBonus" Content="0" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"/>
         </Border>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="45" Margin="136,555,0,0" VerticalAlignment="Top" Width="45">
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="45" Margin="108,555,0,0" VerticalAlignment="Top" Width="45">
             <Label x:Name="CharismaBonus" Content="0" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"/>
         </Border>
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="125" Margin="197,102,0,0" VerticalAlignment="Top" Width="200">
@@ -77,12 +77,12 @@
         <Button x:Name="D6Button" Content="Roll D6" HorizontalAlignment="Left" Margin="448,494,0,0" VerticalAlignment="Top" Width="150" Height="30" Click="D6Button_Click"/>
         <Button x:Name="D4Button" Content="Roll D4" HorizontalAlignment="Left" Margin="448,549,0,0" VerticalAlignment="Top" Width="150" Height="30" Click="D4Button_Click"/>
         <Label x:Name="InitiativeValue" Content="2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="65" FontSize="20" Height="34" Margin="568,97,0,0"/>
-        <Button x:Name="RollStrength" Content="Roll" HorizontalAlignment="Left" Margin="347,107,0,0" VerticalAlignment="Top" Width="40" Height="20" Click="RollStrength_Click"/>
-        <Button x:Name="RollDexterityButton" Content="Roll" HorizontalAlignment="Left" Margin="347,126,0,0" VerticalAlignment="Top" Width="40" Height="20" Click="RollDexterityButton_Click"/>
-        <Button x:Name="ConstitutionRollButton" Content="Roll" HorizontalAlignment="Left" Margin="347,145,0,0" VerticalAlignment="Top" Width="40" Height="20" Click="ConstitutionRollButton_Click"/>
-        <Button x:Name="IntelligenceRollButton" Content="Roll" HorizontalAlignment="Left" Margin="347,164,0,0" VerticalAlignment="Top" Width="40" Height="20" Click="IntelligenceRollButton_Click"/>
-        <Button x:Name="WisdomRollButton" Content="Roll" HorizontalAlignment="Left" Margin="347,182,0,0" VerticalAlignment="Top" Width="40" Height="20" Click="WisdomRollButton_Click"/>
-        <Button x:Name="CharismaRollButton" Content="Roll" HorizontalAlignment="Left" Margin="347,201,0,0" VerticalAlignment="Top" Width="40" Height="20" Click="CharismaRollButton_Click"/>
+        <Button x:Name="RollStrengthSaveButton" Content="Roll" HorizontalAlignment="Left" Margin="347,107,0,0" VerticalAlignment="Top" Width="40" Height="20" Click="RollStrengthSaveButtonClick"/>
+        <Button x:Name="RollDexteritySaveButton" Content="Roll" HorizontalAlignment="Left" Margin="347,126,0,0" VerticalAlignment="Top" Width="40" Height="20" Click="RollDexteritySaveButtonClick"/>
+        <Button x:Name="RollConstitutionSaveButton" Content="Roll" HorizontalAlignment="Left" Margin="347,145,0,0" VerticalAlignment="Top" Width="40" Height="20" Click="RollConstitutionSaveButtonClick"/>
+        <Button x:Name="RollIntelligenceSaveButton" Content="Roll" HorizontalAlignment="Left" Margin="347,164,0,0" VerticalAlignment="Top" Width="40" Height="20" Click="RollIntelligenceSaveButtonClick"/>
+        <Button x:Name="RollWisdomSaveButton" Content="Roll" HorizontalAlignment="Left" Margin="347,182,0,0" VerticalAlignment="Top" Width="40" Height="20" Click="RollWisdomSaveButtonClick"/>
+        <Button x:Name="RollCharismaSaveButton" Content="Roll" HorizontalAlignment="Left" Margin="347,201,0,0" VerticalAlignment="Top" Width="40" Height="20" Click="RollCharismaSaveButtonClick"/>
         <Button x:Name="AcrobaticsRollButton" Content="Roll" HorizontalAlignment="Left" Margin="347,259,0,0" VerticalAlignment="Top" Width="40" Height="20" Click="AcrobaticsRollButton_Click"/>
         <Button x:Name="AnimalHandlingRollButton" Content="Roll" HorizontalAlignment="Left" Margin="347,278,0,0" VerticalAlignment="Top" Width="40" Height="20" Click="AnimalHandlingRollButton_Click"/>
         <Button x:Name="ArcanaRollButton" Content="Roll" HorizontalAlignment="Left" Margin="347,297,0,0" VerticalAlignment="Top" Width="40" Height="20" Click="ArcanaRollButton_Click"/>
@@ -101,9 +101,9 @@
         <Button x:Name="SleightOfHandRollButton" Content="Roll" HorizontalAlignment="Left" Margin="347,539,0,0" VerticalAlignment="Top" Width="40" Height="20" Click="SleightOfHandRollButton_Click"/>
         <Button x:Name="StealthRollButton" Content="Roll" HorizontalAlignment="Left" Margin="347,558,0,0" VerticalAlignment="Top" Width="40" Height="20" Click="StealthRollButton_Click"/>
         <Button x:Name="SurvivalRollButton" Content="Roll" HorizontalAlignment="Left" Margin="347,576,0,0" VerticalAlignment="Top" Width="40" Height="20" Click="SurvivalRollButton_Click"/>
-        <Label x:Name="DexterityLabel" Content="Dexterity" Margin="18,169,541,417" Width="85" Height="35"/>
-        <Label x:Name="ConstitutionLabel" Content="Constitution" Margin="18,260,541,326" Width="85" Height="35"/>
-        <Label x:Name="IntelligenceLabel" Content="Intelligence" Margin="18,350,541,236" Width="85" Height="35"/>
+        <Label x:Name="DexterityLabel" Content="Dexterity" Margin="19,175,541.333,412" Width="85" Height="35"/>
+        <Label x:Name="ConstitutionLabel" Content="Constitution" Margin="19,265,541.333,322" Width="85" Height="35"/>
+        <Label x:Name="IntelligenceLabel" Content="Intelligence" Margin="19,352,541.333,236" Width="85" Height="35"/>
         <Label x:Name="WisdomLabel" Content="Wisdom" Margin="18,444,541,142" Width="85" Height="35"/>
         <Label x:Name="CharismaLabel" Content="Charisma" Margin="18,532,541,54" Width="85" Height="35"/>
         <Label x:Name="StrengthLabel" Content="Strength" Margin="15,79,544,507" Width="85" Height="35"/>
@@ -111,6 +111,12 @@
         <Label x:Name="SkillsLabel" Content="Skills" Margin="198,231,361,355" Width="85" Height="35"/>
         <Label x:Name="SkillsLabel_Copy" Content="Roll" Margin="416,232,143,359" Width="85" Height="35"/>
         <Button x:Name="RollInitiativeButton" Content="Roll for Initiative" HorizontalAlignment="Left" Margin="448,141,0,0" VerticalAlignment="Top" Width="150" Height="30" Click="RollInitiativeButton_Click"/>
+        <Button x:Name="StrengthRollButton" Content="Roll" HorizontalAlignment="Left" Margin="158,113,0,0" VerticalAlignment="Top" Width="34" Height="26" Click="StrengthRollButton_Click"/>
+        <Button x:Name="DexterityRollButton" Content="Roll" HorizontalAlignment="Left" Margin="158,207,0,0" VerticalAlignment="Top" Width="34" Height="26"/>
+        <Button x:Name="ConstitutionRollButton" Content="Roll" HorizontalAlignment="Left" Margin="158,297,0,0" VerticalAlignment="Top" Width="34" Height="26"/>
+        <Button x:Name="IntelligenceRollButton" Content="Roll" HorizontalAlignment="Left" Margin="158,385,0,0" VerticalAlignment="Top" Width="34" Height="26"/>
+        <Button x:Name="WisdomRollButton" Content="Roll" HorizontalAlignment="Left" Margin="158,478,0,0" VerticalAlignment="Top" Width="34" Height="26"/>
+        <Button x:Name="CharismaRollButton" Content="Roll" HorizontalAlignment="Left" Margin="158,564,0,0" VerticalAlignment="Top" Width="34" Height="26"/>
 
     </Grid>
 </Window>
