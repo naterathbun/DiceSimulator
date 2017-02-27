@@ -62,7 +62,7 @@
         </Border>
         <Label x:Name="SavesValues" Content="0&#xD;&#xA;0&#xD;&#xA;0&#xD;&#xA;0&#xD;&#xA;0&#xD;&#xA;0" HorizontalAlignment="Left" Margin="317,102,0,0" VerticalAlignment="Top" Width="34" Height="124" FontSize="14"/>
         <Label x:Name="SkillsValues" Content="0&#xD;&#xA;0&#xD;&#xA;0&#xD;&#xA;0&#xD;&#xA;0&#xD;&#xA;0&#xD;&#xA;0&#xD;&#xA;0&#xD;&#xA;0&#xD;&#xA;0&#xD;&#xA;0&#xD;&#xA;0&#xD;&#xA;0&#xD;&#xA;0&#xD;&#xA;0&#xD;&#xA;0&#xD;&#xA;0&#xD;&#xA;0" HorizontalAlignment="Left" Margin="317,254,0,0" VerticalAlignment="Top" Height="345" Width="34" FontSize="14"/>
-        <Button x:Name="LoadCharacterButton" Content="Load" HorizontalAlignment="Left" Margin="332,10,0,0" VerticalAlignment="Top" Width="65" Height="65" HorizontalContentAlignment="Center" FontSize="18" Click="LoadCharacterButtonClicked"/>
+        <Button x:Name="LoadCharacterButton" Content="Load" HorizontalAlignment="Left" Margin="332,10,0,0" VerticalAlignment="Top" Width="65" Height="65" HorizontalContentAlignment="Center" FontSize="18" Click="LoadCharacterButtonClicked" Background="#FF80FF80"/>
         <Label x:Name="CharacterInfoLabel" Content="Armor Class&#xA;Speed&#xA;Proficiency&#xD;&#xA;Initiative&#xA;" HorizontalAlignment="Left" Margin="439,16,0,0" VerticalAlignment="Top" Width="129" Height="136" FontSize="20"/>
         <Label x:Name="ArmorClassValue" Content="12" HorizontalAlignment="Left" Margin="568,16,0,0" VerticalAlignment="Top" Width="65" Height="34" FontSize="20"/>
         <Label x:Name="SpeedValue" Content="30" HorizontalAlignment="Left" Margin="568,43,0,0" VerticalAlignment="Top" Width="65" FontSize="20" Height="34"/>

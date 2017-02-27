@@ -40,7 +40,8 @@ namespace DiceSimulator
                 SetCharacterStatsFromFile(CharacterFilePath);
                 SetCharacterNameClass();
                 UpdateFormStats();
-                // To Add: Change Button colors here
+                SetLoadCharacterButtonColorToDefault();
+                SetRollButtonsToColors();
             }
         }
 
@@ -68,16 +69,21 @@ namespace DiceSimulator
             this.CharacterFilePath = openFileDialog.FileName;
         }
 
+        private bool CharacterFileIsLoaded()
+        {
+            return (CharacterFilePath != null);
+        }
+
         public void SetCharacterStatsFromFile(string filePath)
         {
             int linesInTextFile = File.ReadLines(filePath).Count();
 
             using (StreamReader sr = new StreamReader(filePath))
             {
+                this.character.Clear();
                 while (!sr.EndOfStream)
                 {
                     this.character.Add(sr.ReadLine(), Convert.ToInt32(sr.ReadLine()));
-                    // This currently crashes if you try to load a character after a character is already loaded. Need to add a reset to the dictionary
                 }
             }
         }
@@ -110,11 +116,6 @@ namespace DiceSimulator
             this.SkillsValues.Content = character["Acrobatics"] + "\n" + character["AnimalHandling"] + "\n" + character["Arcana"] + "\n" + character["Athletics"] + "\n" + character["Deception"] + "\n" + character["History"] + "\n" + character["Insight"] + "\n" + character["Intimidation"] + "\n" + character["Investigation"] + "\n" + character["Medicine"] + "\n" + character["Nature"] + "\n" + character["Perception"] + "\n" + character["Performance"] + "\n" + character["Persuasion"] + "\n" + character["Religion"] + "\n" + character["SleightOfHand"] + "\n" + character["Stealth"] + "\n" + character["Survival"];
         }
 
-        private bool CharacterFileIsLoaded()
-        {
-            return (CharacterFilePath != null);
-        }
-
         private int GetDiceRoll(int die)
         {
             return RandomNumber.Next(1, (die + 1));
@@ -129,6 +130,58 @@ namespace DiceSimulator
         {
             MessageBox.Show("Rolled a " + diceType + "...\n----------\nTotal: " + roll.ToString());
         }
+
+        public void SetLoadCharacterButtonColorToDefault()
+        {
+            LoadCharacterButton.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FFDDDDDD"));
+        }
+
+        public void SetRollButtonsToColors()
+        {
+            SolidColorBrush red = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#ff8080"));
+            SolidColorBrush green = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#80ff80"));
+            SolidColorBrush blue = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#8080ff"));
+            SolidColorBrush purple = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#ff80ff"));
+            SolidColorBrush orange = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#ffbf80"));
+            SolidColorBrush yellow = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#ffff80"));
+
+            StrengthRollButton.Background = red;
+            RollStrengthSaveButton.Background = red;
+            AthleticsRollButton.Background = red;
+
+            DexterityRollButton.Background = green;
+            RollDexteritySaveButton.Background = green;
+            AcrobaticsRollButton.Background = green;
+            SleightOfHandRollButton.Background = green;
+            StealthRollButton.Background = green;
+
+            ConstitutionRollButton.Background = blue;
+            RollConstitutionSaveButton.Background = blue;
+
+            IntelligenceRollButton.Background = purple;
+            RollIntelligenceSaveButton.Background = purple;
+            ArcanaRollButton.Background = purple;
+            HistoryRollButton.Background = purple;
+            InvestigationRollButton.Background = purple;
+            NatureRollButton.Background = purple;
+            ReligionRollButton.Background = purple;
+
+            WisdomRollButton.Background = orange;
+            RollWisdomSaveButton.Background = orange;
+            AnimalHandlingRollButton.Background = orange;
+            InsightRollButton.Background = orange;
+            MedicineRollButton.Background = orange;
+            PerceptionRollButton.Background = orange;
+            SurvivalRollButton.Background = orange;
+
+            CharismaRollButton.Background = yellow;
+            RollCharismaSaveButton.Background = yellow;
+            DeceptionRollButton.Background = yellow;
+            IntimidationRollButton.Background = yellow;
+            PerformanceRollButton.Background = yellow;
+            PersuasionRollButton.Background = yellow;
+        }
+
 
         // Roll Main Stat Checks
         private void StrengthRollButtonClick(object sender, RoutedEventArgs e)
@@ -179,7 +232,7 @@ namespace DiceSimulator
             }
         }
 
-        
+
         // Roll Main Stat Saving Throws
         private void RollStrengthSaveButtonClick(object sender, RoutedEventArgs e)
         {
@@ -384,7 +437,7 @@ namespace DiceSimulator
                 DisplayRollMessage("Rolled for Initiative", GetDiceRoll(20), "Initiative");
             }
         }
-        
+
 
         // Roll Generic Dice
         private void D20Button_Click(object sender, RoutedEventArgs e)
