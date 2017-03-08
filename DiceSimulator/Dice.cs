@@ -8,11 +8,16 @@ namespace DiceSimulator
 {
     public class Dice
     {
-        public int Sides { get; set; }
-        public Random RandomNumber { get; set; } = new Random();
+        private int Sides;
+        private Random RandomNumber = new Random();
 
         public Dice(int sides)
         {
+            if (sides < 1)
+            {
+                sides = 1;
+            }
+
             this.Sides = sides;
         }
 
