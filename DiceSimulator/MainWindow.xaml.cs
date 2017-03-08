@@ -24,8 +24,14 @@ namespace DiceSimulator
         public Dictionary<string, int> character { get; set; } = new Dictionary<string, int>();
         public string CharacterName { get; set; }
         public string CharacterClass { get; set; }
-        public Random RandomNumber { get; set; } = new Random();
 
+        public Dice FourSidedDie = new Dice(4);
+        public Dice SixSidedDie = new Dice(6);
+        public Dice EightSidedDie = new Dice(8);
+        public Dice TenSidedDie = new Dice(10);
+        public Dice TwelveSidedDie = new Dice(12);
+        public Dice TwentySidedDie = new Dice(20);
+        
         public MainWindow()
         {
             InitializeComponent();
@@ -116,11 +122,6 @@ namespace DiceSimulator
             this.SkillsValues.Content = character["Acrobatics"] + "\n" + character["AnimalHandling"] + "\n" + character["Arcana"] + "\n" + character["Athletics"] + "\n" + character["Deception"] + "\n" + character["History"] + "\n" + character["Insight"] + "\n" + character["Intimidation"] + "\n" + character["Investigation"] + "\n" + character["Medicine"] + "\n" + character["Nature"] + "\n" + character["Perception"] + "\n" + character["Performance"] + "\n" + character["Persuasion"] + "\n" + character["Religion"] + "\n" + character["SleightOfHand"] + "\n" + character["Stealth"] + "\n" + character["Survival"];
         }
 
-        private int GetDiceRoll(int die)
-        {
-            return RandomNumber.Next(1, (die + 1));
-        }
-
         private void DisplayRollMessage(string rollDescription, int roll, string statToCheck)
         {
             MessageBox.Show(rollDescription + "...\n\nRolled: " + roll.ToString() + "\n     +\nBonus: " + this.character[statToCheck] + "\n----------\nTotal: " + (roll + this.character[statToCheck]));
@@ -188,7 +189,7 @@ namespace DiceSimulator
         {
             if (CharacterFileIsLoaded())
             {
-                DisplayRollMessage("Rolled a Strength Check", GetDiceRoll(20), "BonusStrength");
+                DisplayRollMessage("Rolled a Strength Check", TwentySidedDie.Roll(), "BonusStrength");
             }
         }
 
@@ -196,7 +197,7 @@ namespace DiceSimulator
         {
             if (CharacterFileIsLoaded())
             {
-                DisplayRollMessage("Rolled a Dexterity Check", GetDiceRoll(20), "BonusDexterity");
+                DisplayRollMessage("Rolled a Dexterity Check", TwentySidedDie.Roll(), "BonusDexterity");
             }
         }
 
@@ -204,7 +205,7 @@ namespace DiceSimulator
         {
             if (CharacterFileIsLoaded())
             {
-                DisplayRollMessage("Rolled a Constitution Check", GetDiceRoll(20), "BonusConstitution");
+                DisplayRollMessage("Rolled a Constitution Check", TwentySidedDie.Roll(), "BonusConstitution");
             }
         }
 
@@ -212,7 +213,7 @@ namespace DiceSimulator
         {
             if (CharacterFileIsLoaded())
             {
-                DisplayRollMessage("Rolled an Intelligence Check", GetDiceRoll(20), "BonusIntelligence");
+                DisplayRollMessage("Rolled an Intelligence Check", TwentySidedDie.Roll(), "BonusIntelligence");
             }
         }
 
@@ -220,7 +221,7 @@ namespace DiceSimulator
         {
             if (CharacterFileIsLoaded())
             {
-                DisplayRollMessage("Rolled a Wisdom Check", GetDiceRoll(20), "BonusWisdom");
+                DisplayRollMessage("Rolled a Wisdom Check", TwentySidedDie.Roll(), "BonusWisdom");
             }
         }
 
@@ -228,7 +229,7 @@ namespace DiceSimulator
         {
             if (CharacterFileIsLoaded())
             {
-                DisplayRollMessage("Rolled a Charisma Check", GetDiceRoll(20), "BonusCharisma");
+                DisplayRollMessage("Rolled a Charisma Check", TwentySidedDie.Roll(), "BonusCharisma");
             }
         }
 
@@ -238,7 +239,7 @@ namespace DiceSimulator
         {
             if (CharacterFileIsLoaded())
             {
-                DisplayRollMessage("Rolled a Strength Saving Throw", GetDiceRoll(20), "SaveStrength");
+                DisplayRollMessage("Rolled a Strength Saving Throw", TwentySidedDie.Roll(), "SaveStrength");
             }
         }
 
@@ -246,7 +247,7 @@ namespace DiceSimulator
         {
             if (CharacterFileIsLoaded())
             {
-                DisplayRollMessage("Rolled a Dexterity Saving Throw", GetDiceRoll(20), "SaveDexterity");
+                DisplayRollMessage("Rolled a Dexterity Saving Throw", TwentySidedDie.Roll(), "SaveDexterity");
             }
         }
 
@@ -254,7 +255,7 @@ namespace DiceSimulator
         {
             if (CharacterFileIsLoaded())
             {
-                DisplayRollMessage("Rolled a Constitution Saving Throw", GetDiceRoll(20), "SaveConstitution");
+                DisplayRollMessage("Rolled a Constitution Saving Throw", TwentySidedDie.Roll(), "SaveConstitution");
             }
         }
 
@@ -262,7 +263,7 @@ namespace DiceSimulator
         {
             if (CharacterFileIsLoaded())
             {
-                DisplayRollMessage("Rolled an Intelligence Saving Throw", GetDiceRoll(20), "SaveIntelligence");
+                DisplayRollMessage("Rolled an Intelligence Saving Throw", TwentySidedDie.Roll(), "SaveIntelligence");
             }
         }
 
@@ -270,7 +271,7 @@ namespace DiceSimulator
         {
             if (CharacterFileIsLoaded())
             {
-                DisplayRollMessage("Rolled a Wisdom Saving Throw", GetDiceRoll(20), "SaveWisdom");
+                DisplayRollMessage("Rolled a Wisdom Saving Throw", TwentySidedDie.Roll(), "SaveWisdom");
             }
         }
 
@@ -278,7 +279,7 @@ namespace DiceSimulator
         {
             if (CharacterFileIsLoaded())
             {
-                DisplayRollMessage("Rolled a Charisma Saving Throw", GetDiceRoll(20), "SaveCharisma");
+                DisplayRollMessage("Rolled a Charisma Saving Throw", TwentySidedDie.Roll(), "SaveCharisma");
             }
         }
 
@@ -288,7 +289,7 @@ namespace DiceSimulator
         {
             if (CharacterFileIsLoaded())
             {
-                DisplayRollMessage("Rolled an Acrobatics Check", GetDiceRoll(20), "Acrobatics");
+                DisplayRollMessage("Rolled an Acrobatics Check", TwentySidedDie.Roll(), "Acrobatics");
             }
         }
 
@@ -296,7 +297,7 @@ namespace DiceSimulator
         {
             if (CharacterFileIsLoaded())
             {
-                DisplayRollMessage("Rolled an Animal Handling Check", GetDiceRoll(20), "AnimalHandling");
+                DisplayRollMessage("Rolled an Animal Handling Check", TwentySidedDie.Roll(), "AnimalHandling");
             }
         }
 
@@ -304,7 +305,7 @@ namespace DiceSimulator
         {
             if (CharacterFileIsLoaded())
             {
-                DisplayRollMessage("Rolled an Arcana Check", GetDiceRoll(20), "Arcana");
+                DisplayRollMessage("Rolled an Arcana Check", TwentySidedDie.Roll(), "Arcana");
             }
         }
 
@@ -312,7 +313,7 @@ namespace DiceSimulator
         {
             if (CharacterFileIsLoaded())
             {
-                DisplayRollMessage("Rolled an Athletics Check", GetDiceRoll(20), "Athletics");
+                DisplayRollMessage("Rolled an Athletics Check", TwentySidedDie.Roll(), "Athletics");
             }
         }
 
@@ -320,7 +321,7 @@ namespace DiceSimulator
         {
             if (CharacterFileIsLoaded())
             {
-                DisplayRollMessage("Rolled a Deception Check", GetDiceRoll(20), "Deception");
+                DisplayRollMessage("Rolled a Deception Check", TwentySidedDie.Roll(), "Deception");
             }
         }
 
@@ -328,7 +329,7 @@ namespace DiceSimulator
         {
             if (CharacterFileIsLoaded())
             {
-                DisplayRollMessage("Rolled a History Check", GetDiceRoll(20), "History");
+                DisplayRollMessage("Rolled a History Check", TwentySidedDie.Roll(), "History");
             }
         }
 
@@ -336,7 +337,7 @@ namespace DiceSimulator
         {
             if (CharacterFileIsLoaded())
             {
-                DisplayRollMessage("Rolled an Insight Check", GetDiceRoll(20), "Insight");
+                DisplayRollMessage("Rolled an Insight Check", TwentySidedDie.Roll(), "Insight");
             }
         }
 
@@ -344,7 +345,7 @@ namespace DiceSimulator
         {
             if (CharacterFileIsLoaded())
             {
-                DisplayRollMessage("Rolled an Intimidation Check", GetDiceRoll(20), "Intimidation");
+                DisplayRollMessage("Rolled an Intimidation Check", TwentySidedDie.Roll(), "Intimidation");
             }
         }
 
@@ -352,7 +353,7 @@ namespace DiceSimulator
         {
             if (CharacterFileIsLoaded())
             {
-                DisplayRollMessage("Rolled an Investigation Check", GetDiceRoll(20), "Investigation");
+                DisplayRollMessage("Rolled an Investigation Check", TwentySidedDie.Roll(), "Investigation");
             }
         }
 
@@ -360,7 +361,7 @@ namespace DiceSimulator
         {
             if (CharacterFileIsLoaded())
             {
-                DisplayRollMessage("Rolled a Medicine Check", GetDiceRoll(20), "Medicine");
+                DisplayRollMessage("Rolled a Medicine Check", TwentySidedDie.Roll(), "Medicine");
             }
         }
 
@@ -368,7 +369,7 @@ namespace DiceSimulator
         {
             if (CharacterFileIsLoaded())
             {
-                DisplayRollMessage("Rolled a Nature Check", GetDiceRoll(20), "Nature");
+                DisplayRollMessage("Rolled a Nature Check", TwentySidedDie.Roll(), "Nature");
             }
         }
 
@@ -376,7 +377,7 @@ namespace DiceSimulator
         {
             if (CharacterFileIsLoaded())
             {
-                DisplayRollMessage("Rolled a Perception Check", GetDiceRoll(20), "Perception");
+                DisplayRollMessage("Rolled a Perception Check", TwentySidedDie.Roll(), "Perception");
             }
         }
 
@@ -384,7 +385,7 @@ namespace DiceSimulator
         {
             if (CharacterFileIsLoaded())
             {
-                DisplayRollMessage("Rolled a Performance Check", GetDiceRoll(20), "Performance");
+                DisplayRollMessage("Rolled a Performance Check", TwentySidedDie.Roll(), "Performance");
             }
         }
 
@@ -392,7 +393,7 @@ namespace DiceSimulator
         {
             if (CharacterFileIsLoaded())
             {
-                DisplayRollMessage("Rolled a Persuasion Check", GetDiceRoll(20), "Persuasion");
+                DisplayRollMessage("Rolled a Persuasion Check", TwentySidedDie.Roll(), "Persuasion");
             }
         }
 
@@ -400,7 +401,7 @@ namespace DiceSimulator
         {
             if (CharacterFileIsLoaded())
             {
-                DisplayRollMessage("Rolled a Religion Check", GetDiceRoll(20), "Religion");
+                DisplayRollMessage("Rolled a Religion Check", TwentySidedDie.Roll(), "Religion");
             }
         }
 
@@ -408,7 +409,7 @@ namespace DiceSimulator
         {
             if (CharacterFileIsLoaded())
             {
-                DisplayRollMessage("Rolled a Sleight of Hand Check", GetDiceRoll(20), "SleightOfHand");
+                DisplayRollMessage("Rolled a Sleight of Hand Check", TwentySidedDie.Roll(), "SleightOfHand");
             }
         }
 
@@ -416,7 +417,7 @@ namespace DiceSimulator
         {
             if (CharacterFileIsLoaded())
             {
-                DisplayRollMessage("Rolled a Stealth Check", GetDiceRoll(20), "Stealth");
+                DisplayRollMessage("Rolled a Stealth Check", TwentySidedDie.Roll(), "Stealth");
             }
         }
 
@@ -424,7 +425,7 @@ namespace DiceSimulator
         {
             if (CharacterFileIsLoaded())
             {
-                DisplayRollMessage("Rolled a Survival Check", GetDiceRoll(20), "Survival");
+                DisplayRollMessage("Rolled a Survival Check", TwentySidedDie.Roll(), "Survival");
             }
         }
 
@@ -434,7 +435,7 @@ namespace DiceSimulator
         {
             if (CharacterFileIsLoaded())
             {
-                DisplayRollMessage("Rolled for Initiative", GetDiceRoll(20), "Initiative");
+                DisplayRollMessage("Rolled for Initiative", TwentySidedDie.Roll(), "Initiative");
             }
         }
 
@@ -444,7 +445,7 @@ namespace DiceSimulator
         {
             if (CharacterFileIsLoaded())
             {
-                DisplayPlainRollMessage("d20", GetDiceRoll(20));
+                DisplayPlainRollMessage("d20", TwentySidedDie.Roll());
             }
         }
 
@@ -452,7 +453,7 @@ namespace DiceSimulator
         {
             if (CharacterFileIsLoaded())
             {
-                DisplayPlainRollMessage("d12", GetDiceRoll(12));
+                DisplayPlainRollMessage("d12", TwelveSidedDie.Roll());
             }
         }
 
@@ -460,7 +461,7 @@ namespace DiceSimulator
         {
             if (CharacterFileIsLoaded())
             {
-                DisplayPlainRollMessage("d10", GetDiceRoll(10));
+                DisplayPlainRollMessage("d10", TenSidedDie.Roll());
             }
         }
 
@@ -468,7 +469,7 @@ namespace DiceSimulator
         {
             if (CharacterFileIsLoaded())
             {
-                DisplayPlainRollMessage("d8", GetDiceRoll(8));
+                DisplayPlainRollMessage("d8", EightSidedDie.Roll());
             }
         }
 
@@ -476,7 +477,7 @@ namespace DiceSimulator
         {
             if (CharacterFileIsLoaded())
             {
-                DisplayPlainRollMessage("d6", GetDiceRoll(6));
+                DisplayPlainRollMessage("d6", SixSidedDie.Roll());
             }
         }
 
@@ -484,7 +485,7 @@ namespace DiceSimulator
         {
             if (CharacterFileIsLoaded())
             {
-                DisplayPlainRollMessage("d4", GetDiceRoll(4));
+                DisplayPlainRollMessage("d4", FourSidedDie.Roll());
             }
         }
 
